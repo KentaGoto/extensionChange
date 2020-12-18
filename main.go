@@ -35,7 +35,7 @@ func main() {
 		os.Exit(1)
 	} else {
 		dir = os.Args[1]  // Source directory
-		cExt = os.Args[2] // Extensions to be changed
+		cExt = os.Args[2] // Extensions name to be changed
 	}
 
 	paths := dirwalk(dir)

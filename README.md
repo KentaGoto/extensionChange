@@ -9,6 +9,12 @@ Specify the directory and the extension you want to change.
 ```
 $ go run main.go <DIR> <Extensions name(ie. txt)>
 ```
+or
+```
+$ go run main.go
+Dir: <Starting directory>
+Ext: <Extensions name(ie. txt)>
+```
 
 ## License
 MIT

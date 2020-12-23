@@ -30,12 +30,20 @@ func main() {
 	var dir string
 	var cExt string
 
-	if len(os.Args) != 3 {
-		fmt.Println("The number of arguments specified is incorrect.")
-		os.Exit(1)
-	} else {
+	a := os.Args
+	aN := len(a)
+
+	if aN == 1 {
+		fmt.Print("Dir: ")
+		fmt.Scan(&dir)
+		fmt.Print("Ext: ")
+		fmt.Scan(&cExt)
+	} else if aN == 3 {
 		dir = os.Args[1]  // Source directory
 		cExt = os.Args[2] // Extensions name to be changed
+	} else {
+		fmt.Println("The number of arguments specified is incorrect.")
+		os.Exit(1)
 	}
 
 	paths := dirwalk(dir)

@@ -19,6 +19,9 @@ Dir: <Starting directory>
 Ext: <Extensions name(ie. txt)>
 ```
 
+## Cautions 
+Files will not be backed up during the process. Therefore, please be careful when specifying directories.  
+
 ## License
 MIT
 

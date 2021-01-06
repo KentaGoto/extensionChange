@@ -26,6 +26,14 @@ func dirwalk(dir string) []string {
 	return paths
 }
 
+func underTheDriveIsExit(dir string) {
+	l := len(dir)
+	if l <= 3 {
+		fmt.Println("ERROR: The process is terminated because it may be directly under the drive.")
+		os.Exit(1)
+	}
+}
+
 func main() {
 	var dir string
 	var cExt string
@@ -45,6 +53,10 @@ func main() {
 		fmt.Println("The number of arguments specified is incorrect.")
 		os.Exit(1)
 	}
+
+	// If it is less than three characters, it is judged to be directly under the drive
+	// and the process is terminated for safety.
+	underTheDriveIsExit(dir)
 
 	paths := dirwalk(dir)
 

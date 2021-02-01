@@ -15,7 +15,7 @@ or
 If you run the program without specifying the directory and extension as arguments, it will enter interactive mode.  
 ```
 $ go run main.go
-Dir: <Starting directory>
+Dir: <Root directory>
 Ext: <Extensions name(ie. txt)>
 ```
 

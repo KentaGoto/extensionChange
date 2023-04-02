@@ -22,7 +22,11 @@ Ext: <Extensions name(ie. txt)>
 **Files will not be backed up during the process. Therefore, please be careful when specifying directories.**  
 
 **NOTE:**  
-For safety reasons, if the specified directory is less than three characters, it is determined to be directly under the drive and the process is terminated.  
+For safety reasons, if the specified directory is less than three characters, it is determined to be directly under the drive and the process is terminated.
+
+## Requirements
+- Windows  
+- Go  
 
 ## License
 MIT

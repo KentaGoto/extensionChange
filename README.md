@@ -1,7 +1,6 @@
 # extensionChange 
 
 ## Description  
-File extension replacement.  
 Changes the extension of the files under the specified directory to the specified extension.  
 
 ## Usage  
